@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/TV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mortgage Principal Amount" />
+
+        <EditText
+            android:id="@+id/ET1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Amount"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TV2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interest Rate (%)" />
+
+        <EditText
+            android:id="@+id/ET2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Interest Rate"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TV3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Months" />
+
+        <EditText
+            android:id="@+id/ET3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Number of Months"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/calculateEMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Calculate EMI" />
+
+        <TextView
+            android:id="@+id/TV4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="EMI Calculation" />
+
+        <TextView
+            android:id="@+id/TV5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="$0" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
